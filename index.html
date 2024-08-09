@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home-VedanthKankan</title>
+    <link rel="stylesheet" href="style.css">
+    <!----Font awesome cdn  font icon css -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <i class="fa-solid fa-v"></i>
+                    <div class="logo-text">Vedanth Kankan</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="Aboutme.html">About Me</a></li>
+                        <li><a href="portfolio.html">Portfolio</a></li>
+                        <li><a href="https://drive.google.com/file/d/1ZP6sN87ll0gQlxPV94UJTXDGAa6WiONW/view?usp=drive_link" target="_blank">Resume</a></li>
+
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="profile pic.jpg" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi I'm a <span class="input"></span></h5>
+                    <h1>Vedanth Kankan</h1>
+                    <p> I aim to excel in a dynamic environment that fosters growth and excellence. My goal is to secure a position that not only provides job satisfaction and opportunities for self-development but also aligns with and contributes to both personal and organizational objectives.                        
+                    </p>
+                    <div class="btn-group">
+                        <!-- <a href="#" class="btn active">Download CV</a>-->
+                        <a href="#" class="btn" id="show-info-btn">Contact</a>
+                        <div id="info-block" style="display: none;">
+                        <ul>
+                            <li>Email: vedanthkankan@gmail.com</li>
+                            <li>Mobile: +91-8143501837</li>
+                        </ul>
+                        </div>
+                        <script src="show button.js"></script>
+
+
+                      </div>
+                        
+                    <div class="social">
+                        <a href="https://www.linkedin.com/in/vedanthkankan/" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/vedanthkankan" target="_blank"><i class="fa-brands fa-github"></i></a>    
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <!---typed js for typing text effect-->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+        /** creating button click show hide navbar **/
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Software Engineer","Web Developer","Data Analyst"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+</body>
+</html>
